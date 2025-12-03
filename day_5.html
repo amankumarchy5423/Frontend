@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+
+<body>
+    <h2>Student form</h2>
+    <form action="app.py">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="student_name" id="name">
+        </div>
+        <br>
+        <div>
+            Role : <input type="text" name="student_role">
+        </div>
+        <br>
+        <div>
+            Email : <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            Date : <input type="date" name="date">
+        </div>
+        <br>
+        <div>
+            Quantity : <input type="number" name="Quantity">
+        </div>
+        <br>
+        <div>
+            <label for="eligible">Are You Eligible ?</label>
+            <input type="checkbox" name="eligibility" id="eligible">
+        </div>
+        <br>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="my_car" id="car">
+                <option value="Ertiga">Ertiga</option>
+                <option value="Scarpio" selected>Scarpio</option>
+
+                <option value="Dzire">Dzire</option>
+            </select>
+        </div>
+
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other <input
+                type="radio" name="gender">
+        </div>
+        <br>
+        <div>
+            About Yourself : <textarea name="about"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" name="reset">
+        </div>
+    </form>
+
+</body>
+
+</html>

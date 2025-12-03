@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector and more designing</title>
+    <style>
+        .container{
+            border: 13px solid royalblue;
+            padding: 13px 15px;
+            margin: 25px auto;
+            width: 666px;
+            height: 200px;
+            background-color: rgb(155, 225, 225);
+        }
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color: rgb(227, 13, 13);
+            color: black;
+        }
+
+        a:visited{
+            background-color: rgb(101, 23, 201);
+        }
+        a:active{
+            background-color: darkorchid;
+        }
+        .btn{
+            background-color: rgb(214, 116, 67);
+            border: none;
+            padding: auto auto;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            background-color: aqua;
+            border: 5px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="mainbox">
+        <h1>This is summary of book</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi voluptatum consequatur alias numquam
+            impedit, similique itaque vel voluptas ratione est veritatis reprehenderit, obcaecati eum quam praesentium
+            aspernatur. Veniam, quo. Sit nam sequi nihil quia quod in maiores nemo suscipit recusandae.</p>
+            <a href="https://linkedin.com" target="_blank" class="btn">Read more</a>
+            <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>

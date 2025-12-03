@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and condition</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>GENDER</th>
+                <!-- <th>MOB</th>
+                <th>EMAIL</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aman</td>
+<td>50</td>
+<td>male</td>
+            </tr>
+            <tr>
+                <td>Aryan</td>
+                <td>25</td>
+                <td>male</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        let score = prompt("Enter your score here : ")
+        if(score < 30){
+            console.log(`you are Fail with score : ${score}`);
+        }
+        else if(score >= 30 & score < 50){
+            console.log(`you are topper in district with score ${score}`);
+        }
+        else{
+            console.log(`you are topper in state with score ${score}`);
+        }
+
+    </script>
+</body>
+</html>

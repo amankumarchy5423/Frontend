@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        body{
+            
+            background-color: black;
+        }
+        div > div{
+            
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            transition-property: all;
+            /* transition: all 5s else-in 5s; */
+            transition-duration: 3s;
+            transition-timing-function: else-in-out;
+            transition-delay: 2s;
+        } 
+        #box:hover{
+            background-color: aliceblue;
+            height: 300px;
+            width: 300px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>This is css toutorial </h1>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+    
+</body>
+</html>
