@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>
+        h1{
+            background-color: red;
+            font-weight: bolder;
+            text-align: center;
+        }
+        /* div p{
+            background-color: rgb(51, 42, 184);
+            color: yellow;
+        } */
+        /* div li p{
+            background-color: rgb(51, 42, 184);
+            color: yellow;
+        } */
+        /* div > p{
+            background-color: rgb(51, 42, 184);
+            color: yellow;
+        } */
+        div + p{
+            background-color: rgb(51, 42, 184);
+            color: yellow;
+        }
+        .form-control{
+            border: 2px solid black;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            position: absolute;
+            top: 400px;
+            left: 765px;
+            overflow: auto;
+            padding: 96px 25px;
+        }
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid salmon;
+        }
+        a[target="_blank"]{
+            color: violet;
+            font-size: 35px;
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+        a[target]{
+            color: rgb(39, 187, 121);
+            font-size: 35px;
+            
+        }
+        li:nth-child(odd){
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>This is more on selector</h1>
+    <a href="http://google.com" target="_blank">Go to the google</a>
+    <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+    <h1><a href="http://linkedin.com" target="_parent">Go to linkedin</a></h1>
+    <div class="container">
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ol type="1">
+            <li class="item" id="item1"><p>This is ordered paragraph</p></li>
+            <li class="item" id="item2"><p>This is ordered paragraph</p></li>
+            <li class="item" id="item3"><p>This is ordered paragraph</p></li>
+            <li class="item" id="item4"><p>This is ordered paragraph</p></li>
+            
+        </ol>
+        <div class="row">
+            <p>This is row class paragraph</p>
+        </div>
+        <p>This is container class paragraph</p>
+    </div>
+    <p>This is outsider paragraph</p>
+</body>
+</html>

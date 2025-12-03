@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+    <style>
+        .maibox {
+            justify-content: space-around;
+            border: 4px solid black;
+        }
+
+        .container {
+            border: 4px solid black;
+            background-color: antiquewhite;
+            /* text-align: center; */
+            width: 400px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+        }
+
+        .container input {
+            border: 2px solid red;
+            margin: 4px;
+            padding: 4px;
+            width: 20%;
+        }
+
+        .container:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>This Is Function in JS</h1>
+    </div>
+    <div class="mainbox">
+        <div class="container">
+            operand_1 :<input id="userInput1" type="number" placeholder="Only number">
+            operand_2 :<input id="userInput2" type="number" placeholder="Only number">
+            operator :<input id="userInput3" type="text"placeholder="Give only binary operator">
+            <button onclick="calculate()">Submit</button>
+
+        </div>
+    </div>
+
+</body>
+<script src="js_4.js"></script>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event </title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: aliceblue;
+            margin: 98px auto;
+            width: 462px;
+        }
+        #btn{
+            background-color: antiquewhite;
+            margin: 0px 460px;
+            padding: 12px 25px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium tempora esse praesentium, voluptate
+            dolorem exercitationem quaerat, dicta voluptas amet ea saepe rem blanditiis nulla fuga ad non reprehenderit
+            quia error nemo, necessitatibus officia illum numquam vero. Perspiciatis reprehenderit at fugit?</p>
+    </div>
+    <button id="btn">ChangeColor</button>
+</body>
+<script>
+    // let box = document.getElementsByClassName('container')
+    // let btn1 = content.getElementById('btn')
+    // btn1.addEventListener('click',function run(){
+    // if (box.style.backgroundColor != 'blue'){
+
+    //     box.style.background-color =  'blue';
+    // }
+    // else{
+    //     box.style.background-color = 'white';
+    // }
+    // })
+    let box = document.getElementsByClassName('container')[0];
+    console.log(box)
+    let btn1 = document.getElementById('btn');
+
+    btn1.addEventListener('click', function () {
+        if (box.style.backgroundColor !== 'blue') {
+            box.style.backgroundColor = 'blue';
+        } else {
+            box.style.backgroundColor = 'white';
+        }
+    });
+</script>
+
+</html>

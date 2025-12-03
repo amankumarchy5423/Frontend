@@ -1,0 +1,47 @@
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive web</title>
+    <style>
+        /* html{
+            } */
+        .container {
+            background-color: red;
+            font-size: 72px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            display: none;
+        }
+
+        @media (min-width:500px) {
+            #first {
+                display: block;
+            }
+        }
+        @media (max-width:500px) and (min-width:300px) {
+            #secand {
+                display: block;
+                color: black;
+            }
+        }
+        @media (max-width:300px) {
+            #third {
+                display: block;
+                color: aquamarine;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <div class="container" id="first">This is the desktop</div>
+        <div class="container" id="secand">This is tab</div>
+        <h1 class="container" id="third">This is mobile phone</h1>
+    </div>
+</body>
+
+</html>

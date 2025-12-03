@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lopps in JS</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Loops In JS</h1>
+    </div>
+</body>
+<script>
+    let i = 0 ;
+    for(i ; i<3 ; i++){
+        // console.log(i)
+    }
+    let friends = ['Aman','Aryan','Akash','Ankush']
+    // for(let i = 0; i<friends.length;i++){
+    //     console.log(i, friends[i])
+    // }
+    // friends.forEach(function f(i){
+    //     console.log(i)
+    // })
+    for(i of friends){
+        console.log(i)
+    }
+    let data = {
+        name : "aman",
+        age : 20,
+        gender : "male"
+    };
+    for(item in data){
+        console.log(`item is ${item} and there coressponding value is ${data[item]}`)
+    }
+
+</script>
+</html>

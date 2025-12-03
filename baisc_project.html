@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+US+Trad+Guides&family=Science+Gothic:wght@100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-size: 20px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("ai-technology-microchip-background-digital-transformation-concept.jpg");
+            color: aliceblue;
+            /* height: 2700px; */
+
+        }
+
+        .left {
+            /* border: 4px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 45px;
+            top: 28px;
+            width: 200px;
+            height: 43px;
+            /* overflow: auto; */
+            /* text-align: center ; */
+            /* font-size: 22px; */
+            /* font-family: "Montserrat", sans-serif; */
+
+        }
+
+        .left :hover {
+            color: #58fa2e;
+        }
+
+        .left img {
+            height: 40px;
+            width: 40px;
+            filter: invert(140%);
+            border-radius: 12px;
+            animation-name: logo-formation;
+            animation-duration: 5s;
+            animation-timing-function:else-in-out ;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-direction:alternate-reverse;
+            /* animation: logo-formation 5s else-in-out 0s infinite alternate-reverse forwards; */
+        }
+        @keyframes logo-formation {
+            from{
+                
+                height: 55px;
+            width: 55px;
+            filter: invert(14%);
+                
+            }
+            to{
+                height: 800px;
+                width: 1000px;
+                filter: invert(140%);
+                align-items: auto auto;
+                justify-content: center;
+        }
+    }
+    
+    .left img:hover {
+            height: 55px;
+        width: 55px;
+        filter: invert(14%);
+           
+        }
+
+        .left p {
+            position: absolute;
+            left: 54px;
+            top: -17px;
+            /* font-size: 22px; */
+            /* font-family: "Montserrat", sans-serif; */
+        }
+
+
+
+        .mid {
+            /* border: 4px solid greenyellow; */
+            display: block;
+            width: 36%;
+
+            margin: 28px auto;
+            /* float:; */
+        }
+
+        .right {
+            /* border: 4px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 28px;
+        }
+
+        header {
+            background-color: #383459;
+            border: 3px solid rgb(87, 114, 161);
+            height: 100px;
+            position: sticky;
+            top: 2px;
+
+        }
+
+        .navvar li a {
+            color: aliceblue;
+            text-shadow: 4px;
+            text-decoration: none;
+            /* font-size: 22px; */
+        }
+
+        .navvar li a:hover,
+        .navvar li a.active {
+            color: #58fa2e;
+            text-decoration: underline;
+        }
+
+        .navvar li {
+            display: inline-block;
+            margin: -6px 10px;
+            padding: 5px 13px;
+
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: aquamarine;
+            background-color: #ffffff;
+            /* font-size: 25px; */
+            /* font-family: "Montserrat", sans-serif; */
+            font-weight: 200;
+            cursor: pointer;
+            padding: 11px 8px;
+        }
+
+        .btn:hover {
+            background-color: #58fa2e;
+        }
+
+        .mainbox {
+            border: 2px solid red;
+            position: absolute;
+            top: 425px;
+            left: 328px;
+            height: 727px;
+            width: 2000px;
+            overflow: visible;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .subbox {
+            border: 2px solid blanchedalmond;
+            margin: 5px 10px;
+            padding: 2px 2px;
+            justify-content: space-evenly;
+            transition: all 0.4s ease-in-out 0s;
+            flex: 1;
+            
+        }
+        .subbox:hover{
+            
+            background-color: black;
+            /* height: 900px;
+            width: 1800px; */
+             transform: scale(1.5);
+            z-index: 10;
+        }
+
+        .subbox a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 38px;
+            padding: 5px 10px;
+        }
+        .subbox P{
+            text-align: left;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+         
+        <div class="left">
+            <img src="659ba59520d886f0cb86d3ba_ai-logo-generator-4.png" alt="">
+            <p>Argo Limited</p>
+        </div>
+
+        <!-- mid for nevbar -->
+        <div class="mid">
+            <ul class="navvar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Subscription</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right for button -->
+        <div class="right">
+            <label for="search">🔍</label>
+            <input type="text" name=search class="btn" id=" search" placeholder="search">
+
+        </div>
+    </header>
+    <div class="mainbox">
+        <div class="subbox" id="subbox1">
+            <a href="#">Chrome Extension project</a>
+            <p>I developed a Chrome Extension that provides real-time URL safety validation using a machine learning
+                model. The extension automatically detects the active tab’s URL whenever a user opens a website and
+                sends it to a backend Flask API, where an ML model analyzes various security-related features such as
+                HTTPS usage, domain age, URL length, and presence of suspicious patterns. Based on the prediction, the
+                extension displays an immediate alert—similar to professional security tools like McAfee—warning users
+                if the website is malicious or unsafe. The goal of this project is to enhance user security by offering
+                a seamless, automatic browser-level protection layer without requiring manual checks. I am also
+                extending support for Firefox to make the tool cross-browser compatible.</p>
+        </div>
+        <div class="subbox" id="subbox2">
+            <a href="#">Car Price prediction Project</a>
+            <p>I developed a Car Price Prediction web application that uses machine learning to accurately estimate the
+                market value of used cars based on various features such as brand, model, year, fuel type, mileage,
+                engine capacity, and transmission. The project includes a complete data pipeline for preprocessing,
+                feature engineering, and model training, where I experimented with multiple regression algorithms and
+                hypertuned the best model using MLflow. The final model is deployed through a Flask web interface,
+                allowing users to enter car details and instantly receive a predicted price. The application is designed
+                to be production-ready, with cloud-based model storage and support for containerized deployment using
+                Docker and Kubernetes, making it efficient, scalable, and easy to integrate into real-world systems.</p>
+        </div>
+
+        <div class="subbox" id="subbox3">
+            <a href="#">Stock price prediction Project</a>
+            <p>I developed a Stock Price Prediction system that uses machine learning and time-series forecasting
+                techniques to predict future stock prices based on historical market data. The project involves data
+                preprocessing, feature engineering, and experimentation with models such as LSTM, ARIMA, and ensemble
+                regressors to capture both short-term fluctuations and long-term trends. The system analyzes key
+                indicators like opening price, closing price, volume, moving averages, and volatility to generate
+                accurate predictions. A Flask-based web interface allows users to input a stock symbol and view
+                predicted prices along with visualized trends. The project is designed with scalability in mind,
+                supporting cloud-based deployment and model tracking using MLflow, making it suitable for educational,
+                analytical, and financial decision-support applications.</p>
+        </div>
+        <div class="subbox" id="subbox4">
+            <a href="#">Network security Project</a>
+            <p>I developed a Network Security URL Classification system that uses machine learning to identify
+                malicious, phishing, and suspicious URLs in real time. The project involves extracting and engineering
+                security-related features such as URL length, presence of IP addresses, HTTPS usage, redirection
+                patterns, special characters, domain age, and other threat indicators. Multiple classification
+                algorithms were trained and evaluated, and the best-performing model was integrated with a Flask API for
+                live prediction. This system can be used by browsers, security tools, or backend services to detect
+                harmful URLs before users interact with them. The project emphasizes reliability, scalability, and
+                modern MLOps practices, using MLflow and DagsHub for experiment tracking, version control, and model
+                deployment.</p>
+        </div>
+    </div>
+</body>
+
+</html>
